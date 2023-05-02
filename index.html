@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Lien pour le scroll animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Icone du site web-->
+    <link rel="shortcut icon" href="iconsite.png">
+</head>
+<body>
+    <section class="header">
+        <div class="arrMenu">
+            
+            <nav>
+                <a href="index.html"><img src="logoAAKM.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark icon" onclick="hideMenu()"></i>
+                    <ul class="navl">
+                        <li class="active"><a href="#" >ACCUEIL</a></li>
+                        <li><a href="#apropos">A PROPOS</a></li>
+                        <li><a href="#service">SERVICES</a></li>
+                        <li><a href="#projet">PROJETS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars icon" onclick="showMenu()"></i>
+            </nav>
+        </div>
+
+        <div class="tex-box">
+            <div class="img">
+                <img src="photoId.jpg"  class="animated animate__jello">
+            </div>
+            <div class="infos">
+                <h1 class="animated animate__pulse">Aliou MAIGA</h1>
+                <h2>J'suis <span style="color:#f44336;" class="multitext"> Developpeur Front End</span></h2>
+                <p> Jeune Passionné en Design <br>et en Informatique. Venez consulter mon portfolio et découvrir mon profil .</p>
+                <a href="CV.pdf" class="hero-btn animated animate__zoomIn">Télécharger mon cv</a>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Apropos-->
+    <section class="Apropos" id="apropos" >
+        <h1 class="animated animate__slideInUp" data-AOS="fade-up"><span><i class="fa-regular fa-address-card icon"></i></span> A PROPOS DE<span style="color:#f44336"> MOI</span></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="apropos-col">
+                <h3 data-aos="flip-left">A PROPOS DE MOI</h3>
+                <p>Je suis un jeune passionné de l'informatique et des nouvelles technologies.Spécialisé ou polyvalent, je peux être confronté aux enjeux et aux problématiques de l’entreprise en termes de nouvelles technologies.</p>
+            </div>
+            <div class="apropos-col">
+                <h3 data-aos="flip-left">OBJECTIFS</h3>
+                <p>Mon objectif est de développer des interfaces web adaptées aux besoins du client. Il peut s'agir de sites Intranet, de sites internet, d'applications web ou d'outils en ligne. Mais aussi m'assurer de la maintenance et l'évolution de l’interface</p>
+            </div>
+            <div class="apropos-col">
+                <h3 data-aos="flip-left">VISIONS</h3>
+                <p>Ma vision est de réaliser des sites webs pour des sociétés nationales voire internationale, pour les PME. Pourquoi pas devénir un jour mon propre patron.</p>
+        </div>
+        
+
+    </section>
+
+
+    <!-- Services-->
+    <section class="service" id="service">
+        <h1 class="animated animate__slideInUp" data-AOS="fade-up"><i class="fa-solid fa-server icon"></i> MES <span style="color:#f44336">SERVICES</span></h1>
+        <p>Voici en quelque sorte les services que j'offre</p>
+
+        <div class="row">
+            <div class="service-col">
+                <img src="o1.png">
+                <div class="layer">
+                    <h3>Dévéloppement frontend</h3>
+                </div>
+            </div>
+            <div class="service-col">
+                <img src="o2.png">
+                <div class="layer">
+                    <h3>WEBDESIGN</h3>
+                </div>
+            </div>
+            <div class="service-col">
+                <img src="o3.png">
+                <div class="layer">
+                    <h3>Gestion de base de données</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projet" id="projet">
+        <h1 class="animated animate__slideInUp" data-AOS="fade-up"><i class="fa-solid fa-diagram-project icon"></i> MES <span style="color:#f44336">PROJETS</span></h1>
+        <p>Ici, quelques projets réalisés après ma carrière estudiantine.</p>
+
+        <div class="row">
+            <div class="projet-col">
+                <img src="p1.gif">
+                <h3 data-aos="flip-left">Site E-commerce IKABOUTIKI</h3>
+                <p>L'un de mes premier projet était la réalisation du site ecommerce pour l'Entreprise Ikaboutiki (ikaboutiki1.app.netlify). Ce site permet à IKABOUTOUKI de promouvoir et vendre ses articles en ligne.</p>
+            </div>
+            <div class="projet-col">
+                <img src="p2.gif">
+                <h3 data-aos="flip-left"> Dashboard d'un site ecommerce</h3>
+                <p>Chez Orange Digital Center, nous avons réaliser le Dashboard du site ecommerce Ikaboutiki. Ce tableau de bord permettra à l'administreur de gérer les entrées et les sorties des articles de l'entreprise IkaboutikI.</p>
+            </div>
+            <div class="projet-col">
+                <img src="p3.gif">
+                <h3 data-aos="flip-left">Logiciel de gestion de stock </h3>
+                <p>Dédiée à l'entreprise HAIDARA, ce logiciel de gestion de stock gèrent les entrées et les sorties de stocks de façon informatisée. Il permet de gérer aussi les clients, les fournisseurs, les factures etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="entCont">
+            <h1 class="animated animate__slideInUp" data-AOS="fade-up"><i class="fa-solid fa-address-book"></i> CONTACTEZ -<span style="color:#f44336"> MOI </span></h1>
+            <p>Disponible 24h/24. </p>
+        </div>
+
+       <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                        
+                    <div class="text">
+                        <h3 data-aos="flip-left"> <i class="fa-sharp fa-solid fa-location-dot"></i> Adresse</h3>
+                        <p>Kalaban-coura, Route de l'aéroport, <br>Rue:261, Porte:190</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3 data-aos="flip-left"> <i class="fa-solid fa-phone"></i> Telephone</h3>
+                        <p><a  href="tel:+22393892871">+223 93892871</a> </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3 data-aos="flip-left"><i class="fa-solid fa-envelope"></i> Email</h3>
+                        <p><a href="mailto:aakm9389@gmail.com">aakm9389@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <h3 data-aos="flip-left"><i class="fa-brands fa-medium"></i> Réseaux sociaux</h3>
+                        <p><a href="https://www.facebook.com/profile.php?id=100008339980628"><i class="fa-brands fa-facebook" ></i> </a>
+                            <a href="https://wa.me/22393892871"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/aliou-maiga-85645a213/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:aakm9389@gmail.com"><i class="fa-brands fa-google-plus-g"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactform">
+                <form>
+                    <h2 style="font-family:'Poppins'; font-weight:900;" data-aos="flip-left">Ecrivez-moi</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required placeholder="Nom complet">
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" name="" required placeholder="Votre e-mail">
+                    </div>
+                    <div class="inputbox">
+                        <textarea required placeholder="Votre message ici"></textarea>
+                    </div>
+                    <div class="inputbox">
+                        <input class="btn" type="submit" name="" value="Envoyer">
+                    </div>
+
+                </form>
+            </div>
+       </div>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <div class="row"> 
+            <div class="ct"><h3> <i class="fa-solid fa-phone icon"></i> +223 93892871</h3></div>
+            <div class="ct"><h3> Copyright <i class="fa-solid fa-copyright icon"></i> 2023 | Tout droit réservé | propulsé par Aliou MAIGA</h3></div>
+            <div class="ct"><h3> <i class="fa-sharp fa-solid fa-location-dot"></i>  Bamako, Mali</h3></div>
+        </div>
+       
+    </footer>
+
+
+    <!------ Javascript for toggle Menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="nav.js"></script>
+<script> 
+    AOS.init({ delay:1000});
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.15"></script>
+<script>
+    var typingEffect=new Typed('.multitext', {
+        strings: ['Développeur frontend', 'Gestionnaire de base de donnée', 'Designer'],
+        loop: true,
+        typespeed: 100,
+        backSpeed: 80,
+        backDelay: 1500
+    })
+</script>
+
+</html>
